@@ -5,6 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ONG El Peludo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
     <header class="header">
@@ -13,12 +17,16 @@
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem ea tempora, tenetur magni ratione labore facere. Eius saepe blanditiis, cum dolor animi, est culpa mollitia eaque modi aliquid consectetur nihil perferendis. Doloribus explicabo reiciendis accusantium quibusdam eaque, laborum pariatur ipsa corporis nisi recusandae, veritatis fugit natus sapientnemquaerat repellendus..</p>
     </header>
 
-    <section class="Integrantes">
-        <ul>
-            <li>Persona 1 - cargo 1</li>
-            <li>Persona 2 - cargo 2</li>
-            <li>Persona 3 - cargo 3</li>
-            <li>Persona 4 - cargo 4</li>
+    <section class="integrantes">
+        <img class="wave" src="assets/img/wave.svg" alt="imagen waves">
+        <ul class="integrantes__contenido">
+            <h2 class="integrantes__heading">integrantes</h2>
+            <div class="integrantes__datos">
+                <li>Persona 1 - cargo 1</li>
+                <li>Persona 2 - cargo 2</li>
+                <li>Persona 3 - cargo 3</li>
+                <li>Persona 4 - cargo 4</li>
+            </div>
         </ul>
 
     </section>
@@ -28,12 +36,16 @@
 
             <div class="mascotas__gatos">
                 <img src="assets/img/gatos.jpg" alt="Imagen gatos" class="mascotas__imagen" width="300px">
-                <a href="gatos.html">Gatos</a>
+                <div class="mascotas__link">
+                    <a href="gatos.html">Gatos</a>
+                </div>
             </div><!--gatos-->
 
             <div class="mascotas__perro">
-                <img src="assets/img/perros.jpg" alt="imagen perros" class="macotas__imagen" width="300px">
-                <a href="Perros.html">Perros</a>
+                <img src="assets/img/perros.jpg" alt="imagen perros" class="mascotas__imagen" width="300px">
+                <div class="mascotas__link">
+                    <a href="Perros.html">Perros</a>
+                </div>
             </div>
 
         </div><!--contenedor-->
