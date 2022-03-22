@@ -382,3 +382,66 @@ img {
     font-weight: 700;
     font-size: 2rem;
 }
+
+/*gatos*/
+.gatos {
+    padding: 5rem 0;
+    text-align: center;
+    
+}
+
+.gatos__heading {
+
+    margin-bottom: 4rem;
+    font-size: 3rem;
+}
+
+@media ( min-width: 768px ) {
+    .gatos__heading {
+        font-size: 4.5rem;
+    }
+}
+
+@media ( min-width: 768px ) {
+    .gatos__grid {
+        display: flex;
+        justify-content: space-evenly;
+    }
+    
+}
+
+
+.gato {
+    flex-basis: calc( 33.3% - 1rem ) ;
+    margin-bottom: 2rem;
+}
+
+.gato img {
+    width: 50rem;
+    margin:  0 auto;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+}
+
+.gato a {
+    display: block;
+    padding: 1rem;
+    color: var( --secundario );
+    font-weight: 700;
+    font-size: 2rem;
+    transition: background-color .3s ease;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+}
+
+.gato a:hover {
+    background-color: var( --primario );
+}
+
+
+
+/*adopcion*/
+
+.adopcion {
+    padding: 7rem 0;
+}
