@@ -8,41 +8,89 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
     <header class="header">
-        <h1 class="header__heading">ONG - Ayuda a un peludo</h1>
-        <p class="header__info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae consequuntur aliquam fugit pariatur alias cupiditate quasi doloribus nostrum, libero necessitatibus? Error temporibus molestiae ea vel ratione repellendus sunt amet est
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem ea tempora, tenetur magni ratione labore facere. Eius saepe blanditiis, cum dolor animi, est culpa mollitia eaque modi aliquid consectetur nihil perferendis. Doloribus explicabo reiciendis accusantium quibusdam eaque, laborum pariatur ipsa corporis nisi recusandae, veritatis fugit natus sapientnemquaerat repellendus..</p>
+        <div class="header-contenedor contenedor">
+            <h1 class="header__heading">ONG <span>Ayuda a un peludo</span></h1>
+            <div class="header-contenido">
+                <p class="header-texto">
+                    Dales ese hogar que siempre quisieron
+                </p>
+
+                <a class="boton" href="#">Contáctanos</a>
+            </div>
+        </div>
     </header>
 
-    <section class="integrantes">
-        <img class="wave" src="assets/img/wave.svg" alt="imagen waves">
-        <ul class="integrantes__contenido">
-            <h2 class="integrantes__heading">integrantes</h2>
-            <div class="integrantes__datos">
-                <li>Persona 1 - cargo 1</li>
-                <li>Persona 2 - cargo 2</li>
-                <li>Persona 3 - cargo 3</li>
-                <li>Persona 4 - cargo 4</li>
+    <section class="nosotros contenedor">
+        <div class="contenedor-grid">
+            <div class="nosotros-imagen">
+                <img src="assets/img/nosotros.png" alt="">
             </div>
-        </ul>
 
+            <div class="nosotros-texto">
+                <h2 class="nosotros-heading">Sobre Nosotros</h2>
+
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam non ut fugit labore numquam maiores voluptates illum eaque iste pariatur quia aut modi maxime deserunt, voluptate sunt harum libero quasi natus placeat eius. Deleniti nobis harum porro maxime accusamus minus!</p>
+
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi eaque vitae praesentium id repellendus, nesciunt deserunt blanditiis amet perspiciatis illum, iure modi eius, maxime maiores!</p>
+            </div><!--texto-->
+        </div><!--grid-->
+    </section>
+
+    <section class="integrantes">
+        <div class="integrantes-contenido contenedor">
+            <h2 class="integrantes__heading">integrantes</h2>
+            <ul class="integrantes__grid">  
+                <li class="integrante">
+                    <div class="integrante-imagen">
+                        <img src="assets/img/integrante1.jpg" alt="imagen de integrante">
+                    </div>
+                    <div class="integrante-contenido">
+                        <h3>Alain Nevado</h3>
+                        <p>cargo: <span>Lorem.</span></p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, adipisci!</p>
+                    </div>
+                </li>
+                <li class="integrante">
+                    <div class="integrante-imagen">
+                        <img src="assets/img/integrante2.jpg" alt="imagen de integrante">
+                    </div>
+                    <div class="integrante-contenido">
+                        <h3>Hector Andrade</h3>
+                        <p>cargo: <span>Lorem.</span></p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, adipisci!</p>
+                    </div>
+                </li>
+                <li class="integrante">
+                    <div class="integrante-imagen">
+                        <img src="assets/img/integrante3.jpg" alt="imagen de integrante">
+                    </div>
+                    <div class="integrante-contenido">
+                        <h3>Cynthia V</h3>
+                        <p>cargo: <span>Lorem.</span></p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, adipisci!</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
     </section>
 
     <main class="mascotas">
-        <div class="mascotas__contenedor">
-
-            <div class="mascotas__gatos">
-                <img src="assets/img/gatos.jpg" alt="Imagen gatos" class="mascotas__imagen" width="300px">
+        <h2 class="mascotas-heading">Elige tu Preferida</h2>
+        <div class="mascotas__contenedor contenedor">
+            <div class="mascota">
+                <img src="assets/img/gatos.jpg" alt="Imagen gatos" class="mascotas__imagen" ">
                 <div class="mascotas__link">
                     <a href="gatos.html">Gatos</a>
                 </div>
             </div><!--gatos-->
 
-            <div class="mascotas__perro">
-                <img src="assets/img/perros.jpg" alt="imagen perros" class="mascotas__imagen" width="300px">
+            <div class="mascota">
+                <img src="assets/img/perros.jpg" alt="imagen perros" class="mascotas__imagen"">
                 <div class="mascotas__link">
                     <a href="Perros.html">Perros</a>
                 </div>
@@ -50,6 +98,10 @@
 
         </div><!--contenedor-->
     </main>
+
+    <footer class="footer">
+        <p>ONG-Ayuda a un peludo</p>
+    </footer>
     
 </body>
 </html>
