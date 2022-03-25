@@ -348,3 +348,18 @@ img {
 }
 
 /*Internas - modificacion Bootstrap*/
+.bg-nav {
+    background-color: var(--primario);
+}
+
+.gatos {
+    text-align: center;
+}
+
+.informacion {
+    text-align: center;
+}
+
+.informacion-cont {
+    padding: 5rem 0;
+}
