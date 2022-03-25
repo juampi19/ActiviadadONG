@@ -309,7 +309,6 @@ img {
     display: inline-block;
     width: 100%;
     padding: 2rem 2rem;
-    background-color: var(--primario);
     color: var(--grisOsucro);
     font-size: 2.4rem;
     font-weight: 700;
@@ -322,7 +321,7 @@ img {
 
 /*footer*/
 .footer {
-    background-color: var(--secundario);
+    background-color: var(--grisOsucro);
     padding: 1rem 0;
 }
 
@@ -348,100 +347,4 @@ img {
     margin-left: .2rem;
 }
 
-/*Internas*/
-
-
-.header-internas {
-    padding: 5rem 0;
-    text-align: center;
-}
-
-.header-internas h1 {
-    color: var(--primario);
-    text-transform: uppercase;
-}
-
-.header-internas span {
-    color: var(--grisOsucro);
-}
-
-/*navegacion*/
-
-.nav-bg {
-    background-color: var(--primario);
-    padding: 2rem 0;
-}
-
-.navegacion {
-    display: flex;
-    justify-content: space-evenly;
-}
-
-.navegacion a {
-    color: var(--grisOsucro);
-    font-weight: 700;
-    font-size: 2rem;
-}
-
-/*gatos*/
-.gatos {
-    padding: 5rem 0;
-    text-align: center;
-    
-}
-
-.gatos__heading {
-
-    margin-bottom: 4rem;
-    font-size: 3rem;
-}
-
-@media ( min-width: 768px ) {
-    .gatos__heading {
-        font-size: 4.5rem;
-    }
-}
-
-@media ( min-width: 768px ) {
-    .gatos__grid {
-        display: flex;
-        justify-content: space-evenly;
-    }
-    
-}
-
-
-.gato {
-    flex-basis: calc( 33.3% - 1rem ) ;
-    margin-bottom: 2rem;
-}
-
-.gato img {
-    width: 50rem;
-    margin:  0 auto;
-    border-top-left-radius: 1rem;
-    border-top-right-radius: 1rem;
-}
-
-.gato a {
-    display: block;
-    padding: 1rem;
-    color: var( --secundario );
-    font-weight: 700;
-    font-size: 2rem;
-    transition: background-color .3s ease;
-    border-bottom-left-radius: 1rem;
-    border-bottom-right-radius: 1rem;
-}
-
-.gato a:hover {
-    background-color: var( --primario );
-}
-
-
-
-/*adopcion*/
-
-.adopcion {
-    padding: 7rem 0;
-}
+/*Internas - modificacion Bootstrap*/
