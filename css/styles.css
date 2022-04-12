@@ -38,6 +38,7 @@ body {
 h1, h2, h3 {
     font-family: var(--fuentePincipal);
     margin: 0 0 2rem 0;
+    font-weight: 700!important;
 }
 
 h1 {
@@ -397,4 +398,9 @@ img {
 .btn-primary {
     background-color: var(--primario)!important;
     border: 1px solid var(--primario)!important;
+}
+
+/*formulario*/
+.formulario legend {
+    background-color: var(--primario)!important;
 }

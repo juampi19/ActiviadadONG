@@ -36,23 +36,19 @@
     </div>
 
     <main class="container-xl py-5">
-        <h2 class="text-center my-5">Contacto</h2>
+        <div class="d-flex justify-content-center">
+            <h2 class="my-5">Contacto</h2>
+        </div>
 
-        <div class="row justify-content-center">
-            <form action="#" class="col-md-8 needs-validation" novalidate>
+        <div class="row justify-content-center mt-5">
+            <form action="#" class="col-md-8 needs-validation formulario" novalidate>
                 <fieldset>
-                    <legend class="bg-primary text-white text-center fs-1 fw-bold">Tus Datos</legend>
+                    <legend class="text-white text-center text-uppercase fs-3 fw-bold">Tus Datos</legend>
 
                     <div class="mb-3">
                         <label for="nombre" class="form-label">Nombre:</label>
                         <input type="text"  id="nombre" class="form-control" placeholder="Tu Nombre" required>
                         <span class="invalid-feedback">Hubo un error</span>
-                    </div>
-
-                    <div class="mb-3">
-                        <label for="asunto" class="form-label">Asunto:</label>
-                        <input type="text"  id="asunto" class="form-control" placeholder="Asunto">
-                        <span class="valid-feedback">Todo Correcto!</span>
                     </div>
 
                     <div class="mb-3">
@@ -71,7 +67,26 @@
                         
                     </div>
                 </fieldset><!--campos-->
+                    <div class="mb-3 form-group">
+                        <label for="pais" class="form-label">Pais:</label>
+                        <select name="" id="pais" class="form-select text-center">
+                            <option value="" selected disabled>--Seleciona un Pais--</option>
+                            <option value="CL"> Chile </option>
+                            <option value="AR"> Argentina </option>
+                            <option value="PE"> Peru </option>
+                            <option value="BR"> Brasil </option>
+                            <option value="CO"> Colombia </option>
+                        </select>
+                        
+                    </div>
+                <fieldset>
+                    <legend class="text-center text-white text-uppercase fs-3 fw-bold mt-3">Información extra</legend>
 
+                </fieldset><!--informacion extra-->
+
+                <div class="my-5 d-grid d-lg-flex justify-content-lg-center">
+                    <button class="btn btn-primary fw-bold fs-4" type="submit">Enviar</button>
+                </div>
                
             </form>
         </div>
