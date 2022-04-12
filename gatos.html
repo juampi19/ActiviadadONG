@@ -37,39 +37,51 @@
     <main class="gatos">
         <h2 class="gatos__heading">Nuestros gatos</h2>
 
-        <div class="container-xl my-3">
-            <div id="indicadores" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-indicators">
-                    <button class="active" type="button" data-bs-target="#indicadores" data-bs-slide-to="0"></button>
-                    <button type="button" data-bs-target="#indicadores" data-bs-slide-to="1"></button>
-                    <button type="button" data-bs-target="#indicadores" data-bs-slide-to="2"></button>
+        <div class="container-xl my-3 py-5">
+            <div class="row">
+                <div class="col-md-6">
+                    <div id="indicadores" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                            <button class="active" type="button" data-bs-target="#indicadores" data-bs-slide-to="0"></button>
+                            <button type="button" data-bs-target="#indicadores" data-bs-slide-to="1"></button>
+                            <button type="button" data-bs-target="#indicadores" data-bs-slide-to="2"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <a href="#lucifer" class="gato__enlace">
+                                    <img src="assets/img/gato3.jpg" alt="slide 1" class="img-fluid w-100">
+                                </a>
+                            </div>
+            
+                            <div class="carousel-item">
+                                <a href="#tommy" class="gato__enlace">
+                                    <img src="assets/img/gato2.jpg" alt="slide 2" class="img-fluid w-100">
+                                </a>
+                            </div>
+            
+                            <div class="carousel-item">
+                                <a href="#ginger" class="gato__enlace">
+                                    <img src="assets/img/gato1.jpg" alt="slide 3" class="img-fluid w-100">
+                                </a>
+                            </div>
+            
+                            <button type="button" class="carousel-control-prev" data-bs-target="#indicadores" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon"></span>
+                            </button>
+            
+                            <button type="button" class="carousel-control-next" data-bs-target="#indicadores" data-bs-slide="next">
+                                <span class="carousel-control-next-icon"></span>
+                            </button>
+                        </div>
+                    </div><!--carrusel-->
                 </div>
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <a href="#lucifer" class="gato__enlace">
-                            <img src="assets/img/gato3.jpg" alt="slide 1" class="img-fluid w-100">
-                        </a>
-                    </div>
-    
-                    <div class="carousel-item">
-                        <a href="#tommy" class="gato__enlace">
-                            <img src="assets/img/gato2.jpg" alt="slide 2" class="img-fluid w-100">
-                        </a>
-                    </div>
-    
-                    <div class="carousel-item">
-                        <a href="#ginger" class="gato__enlace">
-                            <img src="assets/img/gato1.jpg" alt="slide 3" class="img-fluid w-100">
-                        </a>
-                    </div>
-    
-                    <button type="button" class="carousel-control-prev" data-bs-target="#indicadores" data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon"></span>
-                    </button>
-    
-                    <button type="button" class="carousel-control-next" data-bs-target="#indicadores" data-bs-slide="next">
-                        <span class="carousel-control-next-icon"></span>
-                    </button>
+
+                <div class="col-md-6 gato_informacion mt-5 mt-md-0">
+                        <div class="d-flex flex-column gato_texto">
+                            <h3>Más Información</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt quod, alias laborum nihil dolorem perferendis sequi, repellendus pariatur obcaecati libero accusamus doloremque voluptate, sit !</p>
+                            
+                        </div>
                 </div>
             </div>
         </div>
@@ -78,8 +90,9 @@
     <section class="informacion adopcion my-5">
         <h2>Informacion de nuestras mascotas</h2>
         <div class="informacion-cont container-xl">
-            <div class="row d-flex justify-content-center">
-                <div class="col-md-6">
+
+            <div class="row">
+                <div class="col-md-6 col-lg-4">
                     <div class="card mb-3" id="ginger">
                         <img src="assets/img/gato1.jpg" alt="imagen gato" class="card-img-top">
 
@@ -111,6 +124,42 @@
                         </div>
                     </div><!--card-->
 
+                </div><!--col-->
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="card" id="tommy">
+                        <img src="assets/img/gato3.jpg" alt="imagen gato" class="card-img-top">
+
+                        <div class="card-body">
+                            <h3 class="card-title text-center">Tommy</h3>
+                            <button type="button" class="btn btn-primary w-100 fs-3 fw-bold" data-bs-toggle="modal" data-bs-target="#modal2">Mas Información</button>
+    
+                                <div id="modal2" class="modal fade">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <img src="assets/img/gato3.jpg" alt="imagen gato" class="">
+                                            </div>
+                                            <div class="modal-body">
+                                                <div class="adopcion__datos">
+                                                    <p>Nombre: <span>Tommy</span> </p>
+                                                    <p>Edad: <span>3 años</span> </p>
+                                                    <p>Genero: <span>Macho</span> </p>
+                                                    <p>esterilizacion: <span>Si</span> </p>
+                                                    <p>Nro. chip: <span>73123323</span> </p>
+                                                </div>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button data-bs-dismiss="modal" type="button" class="btn btn-danger">Cerrar</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div><!--modal-->
+                        </div>
+                    </div><!--card-->
+                </div><!--col-->
+
+                <div class="col-md-6 col-lg-4">
                     <section>
                         <div class="card mb-3" id="lucifer">
                             <img src="assets/img/gato2.jpg" alt="imagen gato" class="card-img-top">
@@ -143,7 +192,43 @@
                             </div>
                         </div><!--card-->
                     </section>
+                </div><!--col-->
 
+                <div class="col-md-6 col-lg-4">
+                    <div class="card mb-3" id="ginger">
+                        <img src="assets/img/gato1.jpg" alt="imagen gato" class="card-img-top">
+
+                        <div class="card-body">
+                            <h3 class="card-title text-center">Ginger</h3>
+                            <button type="button" class="btn btn-primary w-100 fs-3 fw-bold" data-bs-toggle="modal" data-bs-target="#modal">Mas Información </button>
+
+                            <div id="modal" class="modal fade">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <img src="assets/img/gato1.jpg" alt="imagen gato" class="">
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="adopcion__datos">
+                                                <p>Nombre: <span>Ginger</span> </p>
+                                                <p>Edad: <span>7 años</span> </p>
+                                                <p>Genero: <span>Hembra</span> </p>
+                                                <p>esterilizacion: <span>Si</span> </p>
+                                                <p>Nro. chip: <span>727313</span> </p>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button data-bs-dismiss="modal" type="button" class="btn btn-danger">Cerrar <i class="bi bi-x"></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div><!--modal-->
+                        </div>
+                    </div><!--card-->
+
+                </div><!--col-->
+
+                <div class="col-md-6 col-lg-4">
                     <div class="card" id="tommy">
                         <img src="assets/img/gato3.jpg" alt="imagen gato" class="card-img-top">
 
@@ -174,9 +259,43 @@
                                 </div><!--modal-->
                         </div>
                     </div><!--card-->
-
                 </div><!--col-->
-            </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <section>
+                        <div class="card mb-3" id="lucifer">
+                            <img src="assets/img/gato2.jpg" alt="imagen gato" class="card-img-top">
+    
+                            <div class="card-body">
+                                <h3 class="card-title text-center">Lucifer</h3>
+                                <button type="button" class="btn btn-primary w-100 fs-3 fw-bold" data-bs-toggle="modal" data-bs-target="#modal1">Mas Información</button>
+    
+                                <div id="modal1" class="modal fade">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <img src="assets/img/gato2.jpg" alt="imagen gato" class="">
+                                            </div>
+                                            <div class="modal-body">
+                                                <div class="adopcion__datos">
+                                                    <p>Nombre: <span>Lucifer</span> </p>
+                                                    <p>Edad: <span>4 años</span> </p>
+                                                    <p>Genero: <span>Macho</span> </p>
+                                                    <p>esterilizacion: <span>Si</span> </p>
+                                                    <p>Nro. chip: <span>727121323</span> </p>
+                                                </div>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button data-bs-dismiss="modal" type="button" class="btn btn-danger">Cerrar</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div><!--modal-->
+                            </div>
+                        </div><!--card-->
+                    </section>
+                </div><!--col-->
+            </div><!--row-->
         </div>
 
 

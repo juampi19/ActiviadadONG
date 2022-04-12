@@ -1,6 +1,7 @@
 /*Variables*/
 :root {
     --fuentePincipal: 'Roboto', sans-serif;
+    --fuenteHeading: 'Raleway', sans-serif;
     --negro: #000000;
     --blanco: #ffffff;
     --primario: #84d9bc;
@@ -363,10 +364,24 @@ img {
 /*Internas - modificacion Bootstrap*/
 .bg-nav {
     background-color: var(--primario);
+    
 }
 
 .gatos {
     text-align: center;
+    
+}
+
+.gato_informacion {
+    background-image: url(../assets/img/icons8-cat-butt-100.png);
+    background-size: 7rem;
+    background-repeat: no-repeat;
+    background-position: center top;
+}
+
+.gato_texto {
+    margin-top: 7rem;
+
 }
 
 .informacion {
@@ -375,4 +390,11 @@ img {
 
 .informacion-cont {
     padding: 5rem 0;
+}
+
+
+/*botones*/
+.btn-primary {
+    background-color: var(--primario)!important;
+    border: 1px solid var(--primario)!important;
 }
